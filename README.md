@@ -1,5 +1,5 @@
 # Chinese Twitter
-_by *_
+_by Mette Thunø_
 
 ## Project Developers
 Anita Kurm and Maris Sala 
