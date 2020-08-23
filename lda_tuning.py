@@ -35,7 +35,7 @@ texts = [clean(doc).split() for doc in state_text]
 id2word = corpora.Dictionary(texts)
 
 # Term Document Frequency
-corpus = [dictionary.doc2bow(doc) for doc in text_clean]
+corpus = [id2word.doc2bow(doc) for doc in texts]
 
 # supporting function
 def compute_coherence_values(corpus, dictionary, k, a, b):
