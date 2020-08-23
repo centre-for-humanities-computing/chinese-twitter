@@ -12,7 +12,7 @@ from nltk.stem.wordnet import WordNetLemmatizer
 from gensim import corpora, models, similarities
 
 
-en_df = pd.read_csv('data/english_preprocessed_with_lemmas.csv')
+en_df = pd.read_csv('data/english_preprocessed.csv')
 
 stop = set(stopwords.words('english'))
 exclude = set(string.punctuation)
