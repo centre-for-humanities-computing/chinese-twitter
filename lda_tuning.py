@@ -10,6 +10,7 @@ from nltk.corpus import stopwords
 import string
 from nltk.stem.wordnet import WordNetLemmatizer
 from gensim import corpora, models, similarities
+from gensim.models import CoherenceModel
 
 
 en_df = pd.read_csv('data/english_preprocessed.csv')
