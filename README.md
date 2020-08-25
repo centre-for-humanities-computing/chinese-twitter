@@ -83,14 +83,6 @@ While it's best to interpret the topic model through **interactive tools** such 
 
 
 ### Hashtag Popularity Time Series
-_[in progress, ETA: upcoming week, need to ask Maris]_
-
-To do: 
-- Fix the frequency plot, so chinese characters are displayed
-- Fix color pallette of the time series plot
-- More time series plots of popular hashtags
-- Add descriptive texts
-
 
 ![Top Hashtags](plots/english/hashtag_popularitychart.png)
 **Figure 4.** Frequency distribution of most used hashtags
