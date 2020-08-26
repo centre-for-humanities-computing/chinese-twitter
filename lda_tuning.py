@@ -13,7 +13,7 @@ from gensim import corpora, models, similarities
 from gensim.models import CoherenceModel
 
 
-en_df = pd.read_csv('data/english_preprocessed.csv')
+en_df = pd.read_csv('data/english_preprocessed_simplified.csv')
 
 stop = set(stopwords.words('english'))
 exclude = set(string.punctuation)
@@ -63,7 +63,7 @@ grid = {}
 grid['Validation_Set'] = {}
 
 # Topics range
-min_topics = 2
+min_topics = 4
 max_topics = 15
 step_size = 1
 topics_range = range(min_topics, max_topics, step_size)
@@ -115,7 +115,7 @@ if 1 == 1:
                     model_results['Coherence'].append(cv)
                     
                     pbar.update(1)
-    pd.DataFrame(model_results).to_csv('lda_tuning_results.csv', index=False)
+    pd.DataFrame(model_results).to_csv('lda_tuning_results_new.csv', index=False)
     pbar.close()
 
 
