@@ -88,7 +88,9 @@ While it's best to interpret the topic model through **interactive tools** such 
 **Figure 4.** Frequency distribution of most used hashtags
 
 ![Top Hashtags](plots/english/hashtags_over_time.png)
-**Figure 5.** Top 10 hashtags over time. Notice how #hongkong becomes more popular in July than #coronavirus
+**Figure 5.** Top 10 hashtags over time.
+
+Notice how #hongkong becomes more popular in July than #coronavirus. Additionally, Figure 5 shows that even when plotting the 10 most popular hashtags, the data is best characterized by a maximum of top 5 hashtags, the rest end up looking like noise. This shows that the hashtags in this dataset are rather sparse.
 
 To meaningfully disentangle the hashtag patterns in the tweets, co-occurring hashtags were identified and when summing across the entire dataset, top co-hashtag pairs were plotted against each other to demonstrate their correlative nature. Some hashtags have been merged since they seem to contain the same info, e.g. #hongkong and #hk.
 
