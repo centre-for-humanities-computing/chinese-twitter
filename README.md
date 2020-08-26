@@ -83,20 +83,26 @@ While it's best to interpret the topic model through **interactive tools** such 
 
 
 ### Hashtag Popularity Time Series
-_[in progress, ETA: upcoming week, need to ask Maris]_
-
-To do: 
-- Fix the frequency plot, so chinese characters are displayed
-- Fix color pallette of the time series plot
-- More time series plots of popular hashtags
-- Add descriptive texts
-
 
 ![Top Hashtags](plots/english/hashtag_popularitychart.png)
 **Figure 4.** Frequency distribution of most used hashtags
 
-![HK over time](plots/english/hashtag_hongkong.png)
-**Figure 5.** Use of #hongkong over time.
+![Top Hashtags](plots/english/hashtags_over_time.png)
+**Figure 5.** Top 10 hashtags over time.
+
+Notice how #hongkong becomes more popular in July than #coronavirus. Additionally, Figure 5 shows that even when plotting the 10 most popular hashtags, the data is best characterized by a maximum of top 5 hashtags, the rest end up looking like noise. This shows that the hashtags in this dataset are rather sparse.
+
+To meaningfully disentangle the hashtag patterns in the tweets, co-occurring hashtags were identified and when summing across the entire dataset, top co-hashtag pairs were plotted against each other to demonstrate their correlative nature. Some hashtags have been merged since they seem to contain the same info, e.g. #hongkong and #hk.
+
+![Co-occurring hashtags over time](plots/english/hashtag_china_coronavirus_us.png)
+**Figure 6.** Use of #china* (#china, #china's), #coronavirus* (#coronavirus, #covid19, #covid_19) and #us over time.
+
+![Co-occurring hashtags](plots/english/hashtag_hk_nsl.png)
+**Figure 7.** Use of #hongkong* (#hongkong, #hk, #香港), #nationalsecuritylaw over time.
+
+![Co-occurring hashtags](plots/english/hashtag_china_opinion.png)
+**Figure 8.** Use of #china* (#china, #china's), #opinion over time.
+
 
 
 ### Hashtag Network Plots
