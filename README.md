@@ -10,19 +10,36 @@ Exploration of tweets by [Chinese officials](https://docs.google.com/document/d/
 ## Methods
 
 ### Data description
-Using a Twitter API, we have so far collected a Twitter corpus, which contains 21.207 tweets posted in English language in the period from 2020-05-19 to 2020-08-05 by the following accounts: 
-- @ChinaEUMission
-- @zlj517
-- @globaltimesnews 
-- @ChinaDaily
-- @SpokespersonCHN 
-- @euchinahub
-- @AmbLiuXiaoMing
-- @ChineseEmbinUK
-- @AmbassadeChine
-- @ChinaEmbGermany
-- @overseaschina
-- @PDChinese
+Using a Twitter API, we have so far collected a Twitter corpus, which contains 26.165 tweets posted in English language in the period from 2020-05-19 to 2020-08-25 by the following accounts: 
+
+| Account Name | Number of *English* tweets included in the analysis | Comment |
+| --- |:---:|---|
+| globaltimesnews|13309||
+| ChinaDaily |8128||
+| AmbLiuXiaoMing | 1465||
+| zlj517|1386||
+| euchinahub|550||
+| ChineseEmbinUK|477||
+| SpokespersonCHN|342||
+| ChinaEUMission|340||
+| AmbassadeChine |94|most tweets are in French|
+| ChinaEmbGermany|56||
+| overseaschina|10|most tweets are in chinese|
+| PDChinese|8|most tweets are in chinese|
+| huayunews|0|tweets only in chinese|
+| CNS1952|0| tweets only in chinese|
+| mfa_china|0|data collection just started|
+| chinaembassyusa|0|data collection just started|
+| ChinoisEnFrance|0| the account hasn't posted since May 2012|
+| ouzhounews|0|does not exist|
+
+
+One can see the distribution of tweets based on username and language in the stacked barplot below (only the bars in red were included in the analysis):
+![User/Lang plot](plots/english/user_distribution_lang.png)
+
+
+
+
 
 ### Data pre-processing 
 The preprocessing was conducted using the [NLTK](https://www.nltk.org) library and the [Text to X](https://github.com/centre-for-humanities-computing/text_to_x) pipeline in Python 3.6.
