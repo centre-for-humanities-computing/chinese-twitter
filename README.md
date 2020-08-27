@@ -10,7 +10,7 @@ Exploration of tweets by [Chinese officials](https://docs.google.com/document/d/
 ## Methods
 
 ### Data description
-Using a Twitter API, we have so far collected a Twitter corpus, which contains 26.165 tweets posted in English language in the period from 2020-05-19 to 2020-08-25 by the following accounts: 
+Using a Twitter API, we have so far collected a Twitter corpus, which contains 26.165 tweets posted in English language (for other langauges see Notes) in the period from 2020-05-19 to 2020-08-25 by the following accounts: 
 
 | Account Name | Number of *English* tweets included in the analysis | Comment |
 | --- |:---:|---|
@@ -146,10 +146,25 @@ Louvain community detection was applied to extract partitions of hashtags which 
 
 ## Notes for Discussion of Results
 ### Other languages
-The original dataset included ~10.000 additional tweets in other languages besides English (mostly Chinese and French). One can see which accounts post in which language in the stacked barplot below (**only  English tweets marked in red were included in the current analysis**):
+The original dataset included additional tweets in other languages besides English (mostly Chinese and French):
+| Language | Number tweets |
+| --- |:---:|---|
+| English| 26385|
+| Chinese| 9599|
+| French| 2487|
+| Japanese| 271|
+| German| 249|
+| Undetermined | 177 |
+| Others| each occured less than 50|
+
+
+
+
+
+One can see which yellow accounts post in which of the top 3 languages below (**only  English tweets marked in red were included in the current analysis**):
 ![User/Lang plot](plots/english/user_distribution_lang.png)
 
-It could be insteresting to analyse corpus in Chinese and French, but a bigger collection of such tweets would be preferred. 
+It could be insteresting to analyse other parts of data, e.g. corpora in Chinese and French, but a bigger collection of such tweets would be preferred. 
 
 ### Frequent Token Analysis
 Note that since currently we count frequency for every uniquely spelled uni- and bigram, there are a lot of related terms in the chart, that could take a higher frequency ranking if their use was combined  (e.g. 'hong kong', 'hongkong', 'hong', 'kong', 'hk' are all present in the top 50 as separate tokens).
