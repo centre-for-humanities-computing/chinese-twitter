@@ -34,11 +34,9 @@ Using a Twitter API, we have so far collected a Twitter corpus, which contains 2
 | ouzhounews|0|does not exist|
 
 
-One can see the distribution of tweets based on username and tweet language in the stacked barplot below (only the bars in red were included in the analysis):
-![User/Lang plot](plots/english/user_distribution_lang.png)
+We can see on the following plot timeseries of the number of English tweets posted per day (pretty stable dynamic over time):
 
-
-
+![Date plot](plots/english/date_distribution_count.png)
 
 
 ### Data pre-processing 
@@ -57,7 +55,7 @@ We used [CountVectorizer](https://scikit-learn.org/stable/modules/generated/skle
 
 
 ### Topic Model Analysis
-To visually analyze semantic structure of the 21.207 tweets in a compact and efficient way, we transformed our corpus into a low dimensional topic space using Latent Drichler Allocation (LDA) proposed by [Blei, Ng, & Jordan (2003)](http://www.cse.cuhk.edu.hk/irwin.king/_media/presentations/latent_dirichlet_allocation.pdf). The goal of such topic model is to group terms into clusters ('topics'), based on probabilities of different terms being used together across different documents in the corpus.
+To visually analyze semantic structure of the 26.165 tweets in a compact and efficient way, we transformed our corpus into a low dimensional topic space using Latent Drichler Allocation (LDA) proposed by [Blei, Ng, & Jordan (2003)](http://www.cse.cuhk.edu.hk/irwin.king/_media/presentations/latent_dirichlet_allocation.pdf). The goal of such topic model is to group terms into clusters ('topics'), based on probabilities of different terms being used together across different documents in the corpus.
 The [Gensim](https://radimrehurek.com/gensim/about.html) library in Python was used to fit and tune an LDA topic model to the corpus.
 
 #### Model tuning using the c_v coherence score
@@ -84,7 +82,7 @@ The best model was then visualized using [pyLDAvis](https://pyldavis.readthedocs
 While it's best to interpret the topic model through **interactive tools** such as pyLDAvis, we needed to communicate the results in a static image appropriate for the text document format. For this purpose, we generated word clouds for every topic in the model and then manually assembled them on a single plot to closely reproduce the Intertopic Distance Map from the pyLDAvis dashboard. Word clouds were generated using 100 top tokens for every topic from the Gensim LDA model using the [WordCloud](https://amueller.github.io/word_cloud/) library. The final plot with all word clouds was made using a free account for an online collage making tool [BeFunky](https://www.befunky.com/create/collage/). 
 
 ![Topic Model Plot](plots/english/English_topics.png)
-**Figure 3.** Static visualisation of the pyLDAvis' Intertopic Distance Map of the best topic model (number of topics = 12, alpha = asymmetric, beta = 0.91), fit to English tweets collected from 2020-05-19 to 2020-08-25 . Relative size and location of topics reflect prevalence in the corpus (percentage of tokens covered by the topic) and intertopical distance between them, as determined by the [interactive pyLDAvis visualisation of the model](https://htmlpreview.github.io/?https://github.com/centre-for-humanities-computing/chinese-twitter/blob/master/plots/english/12_topics_english.html).
+**Figure 3.** Static visualisation of the pyLDAvis' Intertopic Distance Map of the best topic model (number of topics = 12, alpha = asymmetric, beta = 0.91), fit to English tweets posted from 2020-05-19 to 2020-08-25 . Relative size and location of topics reflect prevalence in the corpus (percentage of tokens covered by the topic) and intertopical distance between them, as determined by the [interactive pyLDAvis visualisation of the model](https://htmlpreview.github.io/?https://github.com/centre-for-humanities-computing/chinese-twitter/blob/master/plots/english/12_topics_english.html).
 
 
 
@@ -147,6 +145,12 @@ For the visualizations, the nodes represent hashtags and the edges show the conn
 Louvain community detection was applied to extract partitions of hashtags which co-occur more densely together with each other compared to other hashtags in the same plot - the node color visualizes the different groups that form in this way.
 
 ## Notes for Discussion of Results
+### Other languages
+The original dataset included ~10.000 additional tweets in other languages besides English (mostly Chinese and French). One can see which accounts post in which language in the stacked barplot below (**only  English tweets marked in red were included in the current analysis**):
+![User/Lang plot](plots/english/user_distribution_lang.png)
+
+It could be insteresting to analyse corpus in Chinese and French, but a bigger collection of such tweets would be preferred. 
+
 ### Frequent Token Analysis
 Note that since currently we count frequency for every uniquely spelled uni- and bigram, there are a lot of related terms in the chart, that could take a higher frequency ranking if their use was combined  (e.g. 'hong kong', 'hongkong', 'hong', 'kong', 'hk' are all present in the top 50 as separate tokens).
 
