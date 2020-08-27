@@ -24,10 +24,10 @@ Using a Twitter API, we have so far collected a Twitter corpus, which contains 2
 | ChinaEUMission|340||
 | AmbassadeChine |94|most tweets by the account are in French|
 | ChinaEmbGermany|56||
-| overseaschina|10|most tweets by the counts are in chinese|
-| PDChinese|8|most tweets by the account are in chinese|
-| huayunews|0|account tweets only in chinese|
-| CNS1952|0|account tweets only in chinese|
+| overseaschina|10|most tweets by the counts are in Chinese|
+| PDChinese|8|most tweets by the account are in Chinese|
+| huayunews|0|account tweets only in Chinese|
+| CNS1952|0|account tweets only in Chinese|
 | mfa_china|0|**data collection started on 26-08** (there was a problem with a scraper before)|
 | chinaembassyusa|0|**data collection started on 26-08** (there was a problem with a scraper before)|
 | ChinoisEnFrance|0| the account hasn't posted since May 2012|
