@@ -22,12 +22,12 @@ Using a Twitter API, we have so far collected a Twitter corpus, which contains 2
 | ChineseEmbinUK|477||
 | SpokespersonCHN|342||
 | ChinaEUMission|340||
-| AmbassadeChine |94|most tweets by the account are in French|
+| AmbassadeChine |94|we have collected more data, but most tweets by the account are in French|
 | ChinaEmbGermany|56||
-| overseaschina|10|most tweets by the counts are in Chinese|
-| PDChinese|8|most tweets by the account are in Chinese|
-| huayunews|0|account tweets only in Chinese|
-| CNS1952|0|account tweets only in Chinese|
+| overseaschina|10|we have collected more data, but most tweets by the account are in Chinese|
+| PDChinese|8|we have collected more data, but most tweets by the account are in Chinese|
+| huayunews|0|we have collected data, but the account tweets only in Chinese|
+| CNS1952|0|we have collected data, but the account tweets only in Chinese|
 | mfa_china|0|**data collection started on 26-08** (there was a problem with a scraper before)|
 | chinaembassyusa|0|**data collection started on 26-08** (there was a problem with a scraper before)|
 | ChinoisEnFrance|0| the account hasn't posted since May 2012|
