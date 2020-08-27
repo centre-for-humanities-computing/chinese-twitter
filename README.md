@@ -28,13 +28,13 @@ Using a Twitter API, we have so far collected a Twitter corpus, which contains 2
 | PDChinese|8|most tweets by the account are in chinese|
 | huayunews|0|account tweets only in chinese|
 | CNS1952|0|account tweets only in chinese|
-| mfa_china|0|**data collection just started**
-| chinaembassyusa|0|**data collection just started**|
+| mfa_china|0|**data collection started on 26-08** (there was a problem with a scraper before)|
+| chinaembassyusa|0|**data collection started on 26-08** (there was a problem with a scraper before)|
 | ChinoisEnFrance|0| the account hasn't posted since May 2012|
 | ouzhounews|0|does not exist|
 
 
-We can see on the following plot timeseries of the number of English tweets posted per day (pretty stable dynamic over time):
+The following plot shows the count of English tweets added to the corpus depending on the date:
 
 ![Date plot](plots/english/date_distribution_count.png)
 
