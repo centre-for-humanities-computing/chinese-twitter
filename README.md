@@ -102,7 +102,7 @@ While it's best to interpret the topic model through **interactive tools** such 
 | 11| 2.3%| hongfenghuang, croatia, muslim, yemen, luowill1978, potus, hindu, quenching, poison, thirst, saint, worshipper, ambassadorzhang, dhaandhoo, 8million |
 
 
-### Hashtag Popularity Time Series [NOT UPDATED WITH AUGUST DATA YET]
+### Hashtag Popularity Time Series 
 
 ![Top Hashtags](plots/english/hashtag_popularitychart.png)
 **Figure 4.** Frequency distribution of most used hashtags
