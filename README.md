@@ -125,7 +125,7 @@ To meaningfully disentangle the hashtag patterns in the tweets, co-occurring has
 
 
 
-### Hashtag Network Plots [NOT UPDATED WITH AUGUST DATA YET]
+### Hashtag Network Plots
 **May hashtags**
 ![May Hashtags](plots/english/cohashtag_may.png)
 **June hashtags**
