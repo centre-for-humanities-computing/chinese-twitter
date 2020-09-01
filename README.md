@@ -148,7 +148,7 @@ Louvain community detection was applied to extract partitions of hashtags which 
 ### Other languages
 The original dataset included additional tweets in other languages besides English (mostly Chinese and French):
 | Language | Number tweets |
-| --- |:---:|---|
+| --- |:---:|
 | English| 26385|
 | Chinese| 9599|
 | French| 2487|
