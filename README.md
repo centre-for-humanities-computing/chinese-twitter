@@ -1,4 +1,4 @@
-# Chinese Twitter
+# China Twitter Diplomacy
 _by Mette Thunø_
 
 ## Project Developers
@@ -10,7 +10,7 @@ Exploration of tweets by [Chinese officials](https://docs.google.com/document/d/
 ## Methods
 
 ### Data description
-Using a Twitter API, we have so far collected a Twitter corpus, which contains 26.165 tweets posted in English language (for other langauges see Notes) in the period from 2020-05-19 to 2020-08-25 by the following accounts: 
+Using a Twitter API, we have so far collected a Twitter corpus, which contains 26.165 tweets posted in English language in the period from 2020-05-19 to 2020-08-25 by the following accounts: 
 
 | Account Name | Number of *English* tweets included in the analysis | Comment |
 | --- |:---:|---|
@@ -38,6 +38,7 @@ The following plot shows the count of English tweets added to the corpus dependi
 
 ![Date plot](plots/english/date_distribution_count.png)
 
+Initially the corpus also contained tweets in other languages (see Notes for Discussion of Results below), which were not included in the current analysis, but could be of interest to the project when more data are collected.
 
 ### Data pre-processing 
 The preprocessing was conducted using the [NLTK](https://www.nltk.org) library and the [Text to X](https://github.com/centre-for-humanities-computing/text_to_x) pipeline in Python 3.6.
